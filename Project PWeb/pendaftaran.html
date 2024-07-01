@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pelatihan - Web Pelatihan</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Web Pelatihan</h1>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="pelatihan.html">Pelatihan yang Ditawarkan</a></li>
+                <li><a href="pendaftaran.html">Daftar Pelatihan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="daftar">
+            <h2>Daftar Pelatihan</h2>
+            <form action="proses_pendaftaran.php" method="POST">
+                <div class="form-group">
+                    <label for="$nama_peserta">Nama Peserta</label><br>
+                    <input type="text" name="nama_peserta" class="form-control" required><br><br><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="$jenis_pelatihan value">Pelatihan Yang Dipilih</label><br>
+                    <select name="jenis_pelatihan" class="form-control"  required>
+                        <option value="">Pilih pelatihan</option>
+                        <option value="Bahasa">Bahasa</option>
+                        <option value="Jasmani">Jasmani</option> 
+                        <option value="Matematika">Matematika</option>
+                    </select><br><br><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="$jenis_langganan value">Langganan</label><br>
+                    <select name="jenis_langganan" class="form-control"  required>
+                        <option value="">Pilih masa langganan</option>
+                        <option value="6bln">6 bulan (Rp 5.000.000)</option>
+                        <option value="3bln">3 bulan (Rp 2.500.000) </option> 
+                        <option value="reguler">Reguler (Rp 1000.000)</option>
+                    </select><br><br><br>
+                </div><br><br>
+                <button type="submit" class="btn btn-primary">Daftar</button>
+            </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Pelatihan. </p>
+    </footer>
+</body>
+</html>

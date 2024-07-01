@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pelatihan - Web Pelatihan</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Web Pelatihan</h1>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="pelatihan.html">Pelatihan yang Ditawarkan</a></li>
+                <li><a href="pendaftaran.html">Daftar Pelatihan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="container">
+        <div class="form">
+            <h1>Daftar Akun</h1>
+                <div class="card">
+                <form method="post" action="data_user.txt">
+                    <div class="form-group">
+                    <label for="username">Username: </label><br>
+                    <input type="text" class="form-control" id="username" name="username" required><br><br>
+                    </div>
+                <div class="form-group">
+                    <label for="password">Password: </label><br>
+                    <input type="password" class="form-control" id="password" name="password" required><br><br>
+                </div><br>
+            <button type="submit" class="btn btn-primary">Daftar</button> 
+        </form>
+    </div>
+
+            
+        </div>
+        <h3>Sudah memiliki akun? <a href="login.php">Login</a></h3>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Pelatihan. All rights reserved.</p>
+    </footer>
+
+<!--     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/2.js"></script> -->
+</body>
+</html>
